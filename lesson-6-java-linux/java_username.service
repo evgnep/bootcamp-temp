@@ -1,0 +1,9 @@
+[Unit]
+Description=test service
+[Service]
+User=<пользователь>
+WorkingDirectory=<рабочий каталог>
+ExecStart=java -jar scheduling-tasks-complete-0.0.1-SHAPSHOT.jar
+Restart=always
+[Install]
+WantedBy=multi-user.target
